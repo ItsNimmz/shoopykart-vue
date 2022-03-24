@@ -17,7 +17,7 @@ export default createStore({
         orderdata: [],
         orders: [],
         shippingCharge: 40,
-        api_url: "https://shoopykart-backend.herokuapp.com/"
+        api_url: "http://localhost:3000/"
     },
     getters: {
         isLoggedIn(state) {
