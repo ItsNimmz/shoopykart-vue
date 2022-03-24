@@ -52,8 +52,7 @@ export default {
 };
 </script>
 <style scoped>
-.banner {
-   
+.banner {   
     width: 100%;
     height: 300px;
     display: flex;

@@ -7,36 +7,33 @@
           <strong>All Orders</strong>
         </h4>
 
-        <div class="row">
-      <table class="table">
-
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First Name</th>
-      <th scope="col">Last Name</th>
-      <th scope="col">Address</th>
-     <th scope="col">Order Status</th>
-     <th scope="col">Payment Status</th>
-     <th scope="col">Total Amount</th>
-    <th scope="col">Date</th>
-    </tr>
-  </thead>
-  <tbody>
-
-    <tr v-for="item in orders" :key="item.id">
-      <th scope="row">{{item.id}}</th>
-      <td>{{item.first_name}}</td>
-      <td>{{item.last_name}}</td>
-      <td>{{item.address}}</td>
-      <td>{{item.order_status}}</td>
-      <td>{{item.payment_status}}</td>
-      <td>{{item.grand_total}}</td>
-      <td>{{item.createdAt}}</td>
-    </tr>
-    
-  </tbody>
-</table>
+      <div class="row">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Address</th>
+              <th scope="col">Order Status</th>
+              <th scope="col">Payment Status</th>
+              <th scope="col">Total Amount</th>
+              <th scope="col">Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="item in orders" :key="item.id">
+                <th scope="row">{{item.id}}</th>
+                <td>{{item.first_name}}</td>
+                <td>{{item.last_name}}</td>
+                <td>{{item.address}}</td>
+                <td>{{item.order_status}}</td>
+                <td>{{item.payment_status}}</td>
+                <td>{{item.grand_total}}</td>
+                <td>{{item.createdAt}}</td>
+              </tr> 
+            </tbody>
+          </table>
         </div>
       </section>
     </div>
